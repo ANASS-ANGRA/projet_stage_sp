@@ -1,0 +1,10 @@
+INSERT INTO `type` (`id`, `libelle`) VALUES (NULL, 'type1'), (NULL, 'type2');
+INSERT INTO `appliance` (`id`, `dbid`, `disponabilite`, `libelle_appliance`, `reference`, `type_id`) VALUES (NULL, 'dbid', '', 'test1', '1', '1');
+INSERT INTO `appliance` (`id`, `dbid`, `disponabilite`, `libelle_appliance`, `reference`, `type_id`) VALUES (NULL, 'dbid2', '', 'test2', '2', '2');
+INSERT INTO `client` (`id`, `activite`, `libelle`, `secteur`) VALUES (NULL, 'test', 'anass', 'public');
+INSERT INTO `contact` (`id`, `email`, `fonction`, `nom`, `prenom`, `telephone`, `client_id`) VALUES (NULL, 'anass@gamil.com', 'test', 'an', 'anass', '0603250346', '1');
+INSERT INTO `contact` (`id`, `email`, `fonction`, `nom`, `prenom`, `telephone`, `client_id`) VALUES (NULL, 'test@gmail.com', 'test', 'nm', 'mmmm', '0603020304', '1');
+INSERT INTO `pov` (`id`, `analyse_cybersecurite`, `compte_manager`, `date_debut`, `date_fin`, `description`, `ingenier_cybersecurite`, `libelle_pov`, `appliance_id`, `client_id`) VALUES (NULL, 'test', 'compte1', '2023-05-31 15:37:01', '2023-06-30 15:37:01', 'abc test', 'test__', 'test_', '2', '1'), (NULL, 'tst', 'tst', '2023-05-23 15:37:01', '2023-05-31 15:37:01', 'abcd', 'tst', 'tst', '3', '1');
+INSERT INTO `seance` (`id`, `resumer`, `date`, `participant`, `pov_id`) VALUES (NULL, 'abacaca', '2023-05-31 15:39:04', 'anass ahmad', '1'), (NULL, 'tetetet', '2023-05-26 15:39:04', 'ahmad oussama', '2');
+INSERT INTO `type_prsentations` (`id`, `libelle`) VALUES (NULL, 'type_test');
+INSERT INTO `suivi` (`id`, `compte_rendu`, `mantant`, `offre_commerciel`, `pov_id`, `type_prsentation_id`) VALUES (NULL, 'test_compte', '30000.0', 'abc', '1', '1');
